@@ -108,7 +108,7 @@ public final class RandomTeleportService {
 
         int localX = Math.floorMod(candidate.blockX, 16);
         int localZ = Math.floorMod(candidate.blockZ, 16);
-        int height = chunk.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, localX, localZ);
+        int height = chunk.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, localX, localZ) + 1;
         TeleportPosition destination = findSafeDestination(search, candidate, height);
         if (destination == null) {
             searchNext(player, search);
