@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "crossanywherefabric",
+  "version": "${version}",
+  "name": "CrossAnywhere",
+  "description": "Cross-world teleport, waypoint, TPA and back system for Fabric servers.",
+  "authors": ["QianMo0721"],
+  "license": "All-Rights-Reserved",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.rimecraft.crossanywherefabric.Crossanywherefabric"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "java": ">=25"
+  }
+}
